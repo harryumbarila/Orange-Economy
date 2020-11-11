@@ -29,3 +29,12 @@ Nota_c_3
 
 Nota_final <- Nota_c_1 + Nota_c_2 + Nota_c_3
 Nota_final
+
+str(mtcars)
+class(mtcars$am)
+
+mtcars$vs = as.logical(mtcars$vs)
+mtcars$am = as.logical(mtcars$am)
+
+str(orangeeca)
+
