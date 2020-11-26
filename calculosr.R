@@ -38,3 +38,14 @@ mtcars$am = as.logical(mtcars$am)
 
 str(orangeeca)
 
+summary(orangeeca)
+
+summary(mtcars)
+
+wt <- (mtcars$wt*1000)/2.20462262
+wt
+
+mtcars.new <- transform(mtcars,wt=wt*1000/2.20462262)
+mtcars.new
+
+summary(mtcars.new)
