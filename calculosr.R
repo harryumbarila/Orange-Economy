@@ -49,3 +49,38 @@ mtcars.new <- transform(mtcars,wt=wt*1000/2.20462262)
 mtcars.new
 
 summary(mtcars.new)
+
+tiempo_platzi <- c(25,5,10,15,10)
+tiempo_lecturas <- c(30,4,15,20,15)
+tiempo_aprendizaje <- tiempo_platzi + tiempo_lecturas
+tiempo_aprendizaje
+
+dias_aprendizaje <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
+dias_aprendizaje
+
+dias_mas_20min <- c(TRUE, FALSE, FALSE, TRUE, TRUE)
+dias_mas_20min
+
+total_tiempo_platzi <- sum(tiempo_platzi)
+total_tiempo_platzi
+total_tiempo_lecturas <- sum(tiempo_lecturas)
+total_tiempo_lecturas
+total_tiempo_adicional <- total_tiempo_platzi + total_tiempo_lecturas
+total_tiempo_adicional
+
+#Matriz
+tiempo_matrix <- matrix(c(tiempo_platzi, tiempo_lecturas),
+                        nrow = 2,byrow=TRUE)
+                    
+
+dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
+tiempo <- c("tiempo platzi", "tiempo lecturas")
+
+colnames(tiempo_matrix) <- dias
+rownames(tiempo_matrix) <- tiempo
+
+tiempo_matrix
+
+colSums(tiempo_matrix)
+
+
