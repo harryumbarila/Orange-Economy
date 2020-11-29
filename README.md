@@ -1,3 +1,4 @@
-# Orange-Economy
-data of countries in Latam about economy and orange economy.
-12 variables.
+Fundamentos R
+
+Descripción: Este es un repositorio de las clases del curso de Fundamentos de R de Platzi. 
+
