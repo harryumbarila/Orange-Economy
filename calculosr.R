@@ -83,4 +83,30 @@ tiempo_matrix
 
 colSums(tiempo_matrix)
 
+final_matrix <- rbind(tiempo_matrix, c(10,15,30,5,0))
+final_matrix
+
+colSums(final_matrix)
+
+final_matrix <- cbind(final_matrix, Sabado = c(20,30,15))
+final_matrix
+
+final_matrix[1,5]
+
+mtcars[mtcars$cyl<6,]
+
+orangeeca[orangeeca$GDP.PC>=15000,]
+
+orangeeca[orangeeca$Creat.Ind...GDP<=2,]
+
+neworangeeca <- subset(orangeeca, Internet.penetration...population > 80 
+                       & Education.invest...GDP >= 4.5)
+neworangeeca
+
+neworangeeca <- subset(orangeeca, Internet.penetration...population > 80 
+                       & Education.invest...GDP >= 4.5, 
+                       select = Creat.Ind...GDP)
+neworangeeca
+
+rename(orangeeca, c("Creat.Ind...GDP"="AporteEcNja"))
 
