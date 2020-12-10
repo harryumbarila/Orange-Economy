@@ -110,3 +110,22 @@ neworangeeca
 
 rename(orangeeca, c("Creat.Ind...GDP"="AporteEcNja"))
 
+Nivel_Curso <- c("Básico", "Intermedio", "Avanzado")
+Nivel_Curso
+
+head(mtcars)
+
+tail(orangeeca)
+
+glimpse(orangeeca)
+
+my_vector <- 1:8
+my_vector
+my_matrix <- matrix(1:9, ncol=3)
+my_matrix
+my_df <- mtcars[1:4,]
+my_df
+
+my_list <- list(my_vector, my_matrix, my_df)
+my_list
+  
