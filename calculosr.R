@@ -128,4 +128,24 @@ my_df
 
 my_list <- list(my_vector, my_matrix, my_df)
 my_list
+
+#EDA Scatter plot mtcars
+plot(mtcars$mpg ~ mtcars$cyl, 
+     xlab="cilindros", ylab = "millas por galon",
+     main = "Relacion cilindors y millas por galon")
+
+plot(mtcars$mpg ~ mtcars$hp, 
+     xlab="caballs de fuerza", ylab = "millas por galon",
+     main = "Relacion caballos de fuerza y millas por galon")
+
+#EDA organeec
+plot(orangeeca$GDP.PC ~ orangeeca$Median.age,
+     xlab="edad media", ylab="ingreso percapita",
+     main = "relacion ingre percapita y edad media")
+
+plot(orangeeca$Unemployment ~ orangeeca$Education.invest...GDP,
+     xlab="Inversion educación %PIB",
+     ylab="Desempleo",
+     main="Relacion inversion en edudacion y desempleo")
+  
   
